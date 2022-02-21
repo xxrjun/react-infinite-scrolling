@@ -32,7 +32,7 @@ const Searchpage = () => {
     <div>
       <input type="text" onChange={searchHandler} />
       {books.map((book, index) => {
-        if (book.length == index + 1) {
+        if (books.length == index + 1) {
           return (
             <div ref={lastBookElementRef} key={book}>
               {book}
